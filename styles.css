@@ -1,3 +1,11 @@
+html, body {
+    height: 100%; /* Hace que el html y el body ocupen toda la pantalla*/
+    margin: 0;
+    padding: 0;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.5;
@@ -45,6 +53,91 @@ header {
 
 .datos {
     background-color: #e9cef8;
+
+    
+/*Tamaño resolución estandar 1366x768px */
+@media (min-width: 1366px) {
+    .contenido {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .fotoperfil {
+        width: 300px;
+        height: 300px;
+    }
+
+    header {
+        height: 200px;
+    }
+
+    .titulo {
+        font-size: 2.5em;
+    }
+
+    .subtitulo {
+        font-size: 1.5em;
+    }
+}
+
+/* Tamaño tablets 768x1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenido {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .fotoperfil {
+        width: 250px;
+        height: 250px;
+    }
+
+    header {
+        height: 180px;
+    }
+
+    .titulo {
+        font-size: 2em;
+    }
+
+    .subtitulo {
+        font-size: 1.2em;
+    }
+}
+
+/*Tamaño smartphones pequeños 320x568 px*/
+@media (max-width: 320px) {
+    .contenido {
+        width: 95%;
+        padding: 10px;
+    }
+
+    .fotoperfil {
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        float: none;
+        display: block;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    .titulo {
+        font-size: 1.5em;
+    }
+
+    .subtitulo {
+        font-size: 1em;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+}
+
     padding: 20px;
     border-radius: 5px;
     
